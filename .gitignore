@@ -46,3 +46,7 @@ dist/
 
 # turbo
 .turbo
+
+# Only root pnpm-lock.yaml is valid in a monorepo
+apps/*/pnpm-lock.yaml
+packages/*/pnpm-lock.yaml
