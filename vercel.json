@@ -1,3 +1,6 @@
 {
-  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile"
+  "buildCommand": "pnpm --filter @openhospi/web build",
+  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs"
 }
