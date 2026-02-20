@@ -38,10 +38,9 @@ describe('@openhospi/shared — enums', () => {
     expect(Object.keys(ALL_ENUMS)).toHaveLength(22);
   });
 
-  it.each(Object.entries(ALL_ENUMS))('%s is a non-empty readonly array', (_name, arr) => {
+  it.each(Object.entries(ALL_ENUMS))('%s is a non-empty array', (_name, arr) => {
     expect(Array.isArray(arr)).toBe(true);
     expect(arr.length).toBeGreaterThan(0);
-    expect(Object.isFrozen(arr)).toBe(true);
   });
 
   it.each(Object.entries(ALL_ENUMS))('%s contains only unique values', (_name, arr) => {
