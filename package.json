@@ -1,0 +1,32 @@
+{
+  "name": "openhospi",
+  "private": true,
+  "packageManager": "pnpm@10.30.1",
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @openhospi/web dev",
+    "build": "pnpm --filter @openhospi/web build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:start": "npx supabase start",
+    "db:stop": "npx supabase stop",
+    "db:reset": "npx supabase db reset",
+    "db:push": "npx supabase db push",
+    "db:gen-types": "npx supabase gen types typescript --local > packages/supabase/src/database.types.ts",
+    "clean": "rm -rf **/node_modules **/.next **/.turbo **/dist"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "supabase", "@parcel/watcher", "@swc/core", "sharp", "unrs-resolver"]
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.18",
+    "supabase": "^2.76.11",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

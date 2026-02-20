@@ -1,7 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
-/node_modules
+**/node_modules
 /.pnp
 .pnp.js
 
@@ -9,7 +7,7 @@
 /coverage
 
 # next.js
-/.next/
+.next/
 /out/
 
 # production
@@ -34,4 +32,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# plan docs (local-only)
 plan/*
+
+# supabase
+supabase/.temp/
+supabase/.branches/
+
+# expo
+.expo/
+dist/
+
+# turbo
+.turbo

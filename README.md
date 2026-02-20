@@ -31,9 +31,9 @@ OpenHospi is a free, open-source student housing platform built for the Netherla
 | Auth | Better Auth + SURFconext OIDC |
 | Monorepo | pnpm workspaces |
 
-## Getting Started
+## Getting Started 
 
-OpenHospi is in early development. The architecture and roadmap are documented in the [`plan/`](plan/) directory — start there to understand where the project is headed.
+OpenHospi is in early development.
 
 ## License
 
