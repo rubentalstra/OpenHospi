@@ -50,3 +50,7 @@ dist/
 # Only root pnpm-lock.yaml is valid in a monorepo
 apps/*/pnpm-lock.yaml
 packages/*/pnpm-lock.yaml
+
+# Only root pnpm-workspace.yaml is valid in a monorepo
+apps/*/pnpm-workspace.yaml
+packages/*/pnpm-workspace.yaml
